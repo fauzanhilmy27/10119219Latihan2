@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/biru_muda">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="170dp"
+            android:text="verify your account"
+            android:textColor="@color/white"
+            android:textSize="40dp" />
+        <TextView
+            android:id="@+id/das"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="we have send verify email"
+            android:textColor="@color/white"
+            android:layout_below="@id/text1"
+            android:layout_marginLeft="120dp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/vry"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/das"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_transparent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="123dp"
+                android:paddingTop="11dp"
+                android:text="SEND"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_header" >
+        <ImageView
+            android:id="@+id/kembali"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_header_back"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="15dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/kembali"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:text="Register"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:hint="username"
+            android:textColorHint="@color/grey"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:hint="email"
+            android:textColorHint="@color/grey"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/hp_no"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:hint="phone number"
+            android:textColorHint="@color/grey"
+            android:textSize="20dp" />
+
+        <RadioGroup
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hp_no"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_pirates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:text="Male"
+                android:textSize="15dp"
+                android:textColor="@color/grey"/>
+
+            <RadioButton
+                android:id="@+id/radio_pirates2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:text="Female"
+                android:textSize="15dp"
+                android:textColor="@color/grey"/>
+        </RadioGroup>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/gender">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/grupbox"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="0dp"
+                android:text="Blod Type"
+                android:textSize="20dp" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/dropdown"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/textView1"/>
+        </RelativeLayout>
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/gender"
+            android:layout_toRightOf="@+id/bt">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/grupbox"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="50dp"
+                android:paddingRight="0dp"
+                android:text="Reshus"
+                android:textSize="20dp"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/dropdown"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/textView2"/>
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bt"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:hint="Password"
+            android:textColorHint="@color/grey"
+            android:textSize="20dp" />
+        <EditText
+            android:id="@+id/password2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="0dp"
+            android:hint="Retype Password"
+            android:textColorHint="@color/grey"
+            android:textSize="20dp" />
+        <RadioGroup
+            android:id="@+id/option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password2"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_pirates3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:text="Personal"
+                android:textSize="15dp"
+                android:textColor="@color/grey"/>
+
+            <RadioButton
+                android:id="@+id/radio_pirates4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:text="Organization"
+                android:textSize="15dp"
+                android:textColor="@color/grey"/>
+        </RadioGroup>
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/job"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/option">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/grupbox"
+                android:orientation="vertical"></LinearLayout>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="0dp"
+                android:text="Job________________________"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/textView4"
+                android:src="@drawable/dropdown" />
+        </RelativeLayout>
+        <EditText
+            android:id="@+id/addres"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/job"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:hint="phone number"
+            android:textColorHint="@color/grey"
+            android:textSize="20dp" />
+        <RelativeLayout
+            android:id="@+id/reg"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/addres"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_trasnparent1">
+
+            <TextView
+                android:id="@+id/regis"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="123dp"
+                android:paddingTop="11dp"
+                android:text="Register"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
